@@ -9,3 +9,7 @@ CSS Techniques Used
     - Grid
 
 Design images can be found in 'design' folder
+
+Devices
+    - Desktop 1440px
+    - Mobile 375px
