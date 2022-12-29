@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Open+Sans:ital,wght@0,300;1,300;1,400&family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans:ital,wght@0,300;1,300;1,400&display=swap');
+
+body {
+    background-color: #090b1a;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    background-color: #1b1938;
+    height: 446px;
+    width: 1000px;
+    border-radius: 5px;
+}
+
+.card-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -5%;
+}
+
+.card-image {
+    background-image: url(./images/image-header-desktop.jpg);
+    width: 510px;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-title {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.card-title span {
+    color: #aa5cdb;
+}
+
+.card-paragraph {
+    color: lightgray;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.stat-container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.card-stats {
+    display: flex;
+    color: #ffffff;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+    margin-left: 2%;
+    gap: 20px;
+}
+
+.stat {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 12px;
+    color: lightgrey;
+}
+
+/** MOBILE **/
+@media only screen and (max-width: 375px) {
+    body {
+        margin-top: 3%;
+    }
+    .card-container {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 800px;
+      width: 350px;
+      margin-top: 1%;
+    }
+
+    .card-title {
+        font-size: 34px;
+        text-align: center;
+        margin-top: 8%;
+    }
+
+    .card-image {
+        width: 330px;
+        height: 250px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .card-paragraph {
+        text-align: center;
+    }
+
+    .stat-container {
+        width: 330px;
+    }
+    .card-stats {
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+    }
+  }
